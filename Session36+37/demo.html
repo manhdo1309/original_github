@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sinh viên</title>
+</head>
+<body>
+
+<form id="studentForm">
+    <label for="studentId">Student ID:</label>
+    <input type="text" id="studentId" name="studentId" maxlength="6">
+
+    <label for="studentName">Student Name:</label>
+    <input type="text" id="studentName" name="studentName">
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age">
+
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" name="phone" placeholder="E.g., 0123456789">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+
+    <button type="button" onclick="createStudent()">Create</button>
+</form>
+
+<div id="studentInfo"></div>
+
+<script>
+    function createStudent() {
+        var studentId = document.getElementById('studentId').value;
+        var studentName = document.getElementById('studentName').value;
+        var age = document.getElementById('age').value;
+        var phone = document.getElementById('phone').value;
+        var email = document.getElementById('email').value;
+
+        if (studentId.length !== 6) {
+            alert('Student ID must have 6 characters.');
+            return;
+        }
+
+        if (studentName.trim() === '') {
+            alert('Student Name cannot be empty.');
+            return;
+        }
+
+        if (age < 18) {
+            alert('Age must be 18 or older.');
+            return;
+        }
+
+        var phoneRegex = /^[0-9]{10}$/;
+        if (!phoneRegex.test(phone)) {
+            alert('Invalid phone number format. Please enter a valid VN phone number.');
+            return;
+        }
+
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            alert('Invalid email address format.');
+            return;
+        }
+
+        var studentInfo = "Student ID: " + studentId + "<br>" +
+                          "Student Name: " + studentName + "<br>" +
+                          "Age: " + age + "<br>" +
+                          "Phone: " + phone + "<br>" +
+                          "Email: " + email;
+
+        // Hiển thị thông tin sinh viên bằng DOM
+        var studentInfoDiv = document.getElementById('studentInfo');
+        studentInfoDiv.innerHTML = studentInfo;
+    }
+</script>
+
+</body>
+</html>

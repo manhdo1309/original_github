@@ -1,0 +1,57 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(33, 33, 33);
+    box-sizing: border-box;
+}
+.border-box{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    color: pink;
+    border: 10px solid goldenrod;
+    padding: 30px;
+    margin: 30px;
+}
+.post-container{
+    width: 300px;
+    border: 1px solid #ddd;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+.post-container img{
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.post-container h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.post-container a{
+    margin-left: 20px;
+}
+.card-container{
+    width: 300px;
+    border: 1px solid rgb(232, 222, 222);
+    padding: 10px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+}
+.card-container img{
+    width: 100%;
+    background-color: transparent;
+    border: transparent;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    
+}
+.card-container .bg{
+    background-color: #bf282a;
+}

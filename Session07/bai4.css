@@ -1,0 +1,25 @@
+*{
+    background-color: white;
+}
+.frame{
+    border-radius: 50%;
+    background-color: white;
+    padding: 20px 20px; 
+    position: relative;
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    box-shadow: 10px 5px 5px rgb(247, 236, 236);
+}
+
+.frame .image{
+    position: absolute;
+    left: -2px;
+    top: 5px;
+    height: 200px;
+    width: 200px;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: transparent;
+    border-radius: 50%;
+}

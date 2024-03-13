@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Trang web bán hàng</h1>
+    <nav>
+        <ul>
+            <li><a href="/trangchu">Trang chủ</a></li>
+            <li><a href="/sanpham">Sản phẩm</a></li>
+            <li><a href="/gioithieu">Giới thiệu</a></li>
+            <li><a href="/lienhe">Liên hệ</a></li>
+        </ul>
+    </nav>
+    <h2>Thông tin sản phẩm</h2>
+    <table border="1">
+        <tr>
+            <th>Tên sản phẩm</th>
+            <th>Mô tả</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+        </tr>
+        <tr>
+            <td>Sản phẩm 1</td>
+            <td>Mô tả sản phẩm 1</td>
+            <td>100.000đ</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Sản phẩm 2</td>
+            <td>Mô tả sản phẩm 2</td>
+            <td>200.000đ</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Sản phẩm 3</td>
+            <td>Mô tả sản phẩm 3</td>
+            <td>300.000đ</td>
+            <td>3</td>
+        </tr>
+    </table>
+    <form action="">
+        <h2>Thông tin người dùng</h2>
+        <div>
+            <label for="Fullname">Họ và tên:</label>
+            <input type="text" name="Fullname" id="Fullname">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="phonenumber">Số điện thoại:</label>
+            <input type="tel" name="phonenumber" id="phonenumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        </div>
+        <div>
+            <label for="adress">Địa chỉ:</label>
+            <input type="text" name="adress" id="adress">
+        </div>
+        <div>
+            <input type="submit" name="submit" id="submit" value="Đặt hàng">
+        </div>
+    </form><br>
+    <p>&#169;2023 Trang web bán hàng</p>
+</body>
+</html>

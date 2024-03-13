@@ -1,0 +1,9 @@
+.demo-bg{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    background-image: url("TaSonTung.png");
+    background-size: cover;
+}

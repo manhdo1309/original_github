@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    font-family: 'Noto Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: #FCFEFE;
+    display: flex;
+    justify-content: space-evenly;
+}
+.header-left{
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 80px;
+    font-weight: 400;
+    font-size: 36px;
+    font-family: 'Yeseva One', serif;
+    display: flex;
+    gap: 0;
+}
+.header-left span:first-child{
+    color: #1F2B6C;
+}
+.header-left span:last-child{
+    color: #159EEC;
+}
+
+.header .header-right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.header-right .header-item{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.header-item div{
+    display: flex;
+    flex-direction: column;
+}
+.material-symbols-outlined{
+    font-size: 30px;
+}
+.header-item div span:first-child{
+    text-transform: uppercase;
+    color: #1F2B6C;
+    font-size: 16px;
+    font-weight: 500px;
+}
+.header-item div span:last-child{
+    color: #159EEC;
+    font-weight: 500px;
+    font-size: 16px;
+}
+.navbar{
+    height: 80px;
+    background-color: #1F2B6C;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navbar .navbar-left{
+    display: flex;
+    gap: 20px;
+}
+.active{
+    font-weight: 600px !important;
+    color: #BFD2F8 !important;
+}
+.navbar-left a{
+    color: #FCFEFE;
+    font-size: 18px;
+    font-weight: 400;
+}
+.navbar-right{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.navbar-right span{
+    color: #FCFEFE;
+    width: 20px;
+}
+.navbar-right .button{
+    color: #BFD2F8;
+    height: 45px;
+    padding: 13px 35px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    color: #1F2B6C;
+    font-weight: 500px;
+    font-size: 16px;
+}

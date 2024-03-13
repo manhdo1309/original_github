@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--         Array: Mảng thuộc kiểu dữ liệu phức tạp (tham chiếu/reference)
+        I- Các cách khai báo:
+            1. let arr = [];
+            2. let student = new Array();
+        Các phần tử trong mảng ngăn cách với nhau bởi dấu (,)
+        Mảng có thể chứa nhiều kiểu dữ liệu khác nhau
+        Mảng đánh chí số index từ 0
+        Kiểm tra độ dài của mảng: tên_mảng.length
+        Các cách duyệt mảng:
+        1. Dùng vòng lặp for
+        2. For-in: trả về chỉ mục
+        3. For-of: trả về giá trị
+        *****************
+        CRUD với mảng
+        1. Create
+        + unshift: thêm vào đầu mảng
+        + push: thêm vào cuối
+        + splice: thêm vào vị trí bất kỳ
+        2. Read
+        + for
+        + for-in
+        + for-of
+        3. Update
+        + dùng splice
+        + theo vị trí (index)
+        4. Delete
+        + pop: xóa phần tử cuối
+        + splice
+        + shift: xóa phần từ đầu
+    
+    // let students = ["hoa", "hồng", "minh", "hùng"]
+    // students.splice(3,0, "huệ")
+    // students.splice(1,1,"hạnh")
+    // students[1] = "hạnh";
+    // students.splice(1,1);
+
+    // for(let i = 0; i < students.length; i++){
+    //     console.log(students[i]);
+    // }
+    // for (const key in students) {
+    //     console.log(students[key]);
+    // }
+    // for (const iterator of students) {
+    //     console.log(iterator);
+    // } -->
+
+    <input type="text" placeholder="Mời nhập tên sản phẩm muốn mua" id="input">
+    <button onclick="addTocart()">Mua</button>
+    <script>
+
+        
+        /*
+        PHÂN TÍCH BÀI TOÁN
+        1. Lấy giá trị ô input người dùng nhập vào
+        2. Kiểm tra xem trong cửa hàng có tồn tại sản phẩm để bán hay không
+            3. Nếu có thì thêm vào giỏ hàng gồm các thuộc tính
+                {
+                    id: "",
+                    name: "",
+                    quantity: "",
+                    price: ""
+                }
+                Kiểm tra xem sản phẩm thêm vào có trong giỏ hàng hay chưa, nếu có rồi thì tăng số lượng còn không có thì thêm vào bình thường
+                */
+       let products = [
+           {
+               id: 1,
+               name: "iphone5",
+               stock: 5,
+               price: 5000
+           },
+           {
+               id: 2,
+               name: "iphone6",
+               stock: 7,
+               price: 6000
+           },
+           {
+               id: 3,
+               name: "iphone7",
+               stock: 8,
+               price: 8000
+           },
+       ]
+       let myCart = [];
+       function addTocart(){
+            let boughtItem = document.getElementById("input").value;
+            let ok = false;
+            let addCart;
+            for (let i = 0; i < products.length; i++) {
+                if(boughtItem === products[i].name){
+                    console.log("Tìm thấy sản phẩm");
+                    addCart = products[i];
+                    ok = true;
+                    break;
+                }
+            }
+            if(!ok){
+                console.log("Không tìm thấy sản phẩm");
+            }else{
+                // Mua hàng
+                let check = false;
+                for(let i = 0; i < products.length; i++){
+                    if(boughtItem === products[i].name){
+                        check = true;
+                    };
+                };
+                if(check){
+                    // tăng số lượng
+                    for(let j = 0; j < products.length; j++){
+                        if(boughtItem === products[j].name){
+                            products[j].quantity++;
+                        }
+                    }
+                }else{
+                    // Thêm hàng vào giỏ
+                    addCart.quantity = 1;
+                    myCart.push(addCart);
+                }
+                console.log(myCart);
+            }
+        };
+    </script>
+</body>
+</html>

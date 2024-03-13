@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+.container{
+    height: 56px;
+    width: 100%;
+    background-color: rgb(221, 242, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 0 36px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+p{
+    font-size: 120%;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #938b8b;
+    font-size: 80%;
+}
+button{
+    padding: 0 16px;
+    height: 36px;
+    border-radius: 4px;
+    border: transparent;
+    background-color: rgb(177, 177, 180);
+    color: white;
+}

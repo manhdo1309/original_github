@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            Bài 14: Viết chương trình nhập vào một số nguyên dương n (n <= 10). Hãy in ra bảng số có n dòng, mỗi dòng in n số nguyên liên tiếp,
+            dòng thứ i bắt đầu từ số i
+            VD: nhập n = 4
+            1 2 3 4 
+            2 3 4 5
+            3 4 5 6
+            4 5 6 7
+        */
+        let n = parseInt(prompt("Nhập vào 1 số nguyên <= 10"));
+        for(let i = 1; i <= n; i++){
+            let row = '';
+            for(let j = i; j < i + n; j++){
+                row += j + ' ';
+            }
+            console.log(row);
+        }  
+    </script>
+</body>
+</html>

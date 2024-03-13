@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    fieldset{
+        width: 400px;
+        border: none;
+        background-color: white;
+    }
+</style>
+<body style="background-color: antiquewhite;">
+    <form action="">
+        <h1>Car Purchase Form</h1>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+        </div><br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+        </div><br>
+        <div>
+            <label for="choosecar">Choose a Car:</label>
+            <select name="choosecar" id="choosecar">
+                <option value="model1">Model 1</option>
+                <option value="model2">Model 2</option>
+                <option value="model3">Model 3</option>
+            </select>
+        </div><br>
+        <div>
+            <label for="choosecolor">Choose a Car:</label>
+            <select name="choosecolor" id="choosecolor">
+                <option value="color1">Red</option>
+                <option value="color2">Black</option>
+                <option value="color3">White</option>
+            </select>
+        </div><br>
+        <div>
+            <label for="quantity">Quantiry:</label>
+            <input type="number" name="quantity" id="quantity" min="1">
+        </div><br>
+        <div>
+            <label for="deliverydate">Delivery Date:</label>
+            <input type="date" name="deliverydate" id="deliverydate">
+        </div><br>
+        <div>
+            <input type="submit" name="submit" id="submit" value="submit">
+        </div><br>
+    </form>
+    <form action="">
+        <fieldset>
+            <p style="text-align: center; background-color: orangered; color: white;">SỞ THÍCH CỦA BẠN </p>
+            <div>
+                <label for="name">Họ và tên</label>
+                <input type="text" name="name" id="name">
+            </div><br>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="hobby">Sở thích</label>
+                <input type="checkbox" name="checkbox1" id="checkbox1">
+                <label for="checkbox1">Thể thao</label>
+                <input type="checkbox" name="checkbox2" id="checkbox2" >
+                <label for="checkbox2">Âm nhạc</label>
+                <input type="checkbox" name="checkbox3" id="checkbox3" >
+                <label for="checkbox3">Đọc sách</label><br>
+                <input type="checkbox" name="checkbox4" id="checkbox4" >
+                <label for="checkbox4">Lướt web</label>
+                <input type="checkbox" name="checkbox5" id="checkbox5" >
+                <label for="checkbox5">Chơi game</label>
+                <input type="checkbox" name="checkbox6" id="checkbox6" >
+                <label for="checkbox6">Điện ảnh</label><br>
+                <input type="checkbox" name="checkbox7" id="checkbox7" >
+                <label for="checkbox7">Du lịch</label>
+            </div>
+            <div>
+                <input type="submit" name="submit" id="submit" value="Gửi thông tin">
+                <input type="reset" name="reset" id="reset" value="Nhập lại">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

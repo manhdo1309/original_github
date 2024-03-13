@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="navbar-container">
+            <ul class="v-center">
+                <li><a href="">Kênh người bán</a></li>
+                <li>|</li>
+                <li><a href="">Tải ứng dụng</a></li>
+                <li>|</li>
+                <li class="navbar-center-contact">
+                    <div class="navbar-center-contact-icons">
+                        <div>Kết nối</div>
+                        <a href=""><i class="fa-brands fa-facebook" style="font-size: 130%;"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram" style="font-size: 130%;"></i></a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-links">
+                <li class="navbar-link-notification">
+                    <div role="button" class="notification-container">
+                        <a href="" class="notification-container-btn">
+                            <i class="fa-regular fa-bell" style="font-size: larger;"></i>
+                            <span class="notification-text">Thông báo</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="navbar-link-help-center">
+                    <div role="button" class="help-center-container">
+                        <a href="" class="help-center-container-btn">
+                            <i class="fa-regular fa-circle-question" style="font-size: larger;"></i>
+                            <span class="help-center-text">Hỗ trợ</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="navbar-link-language">
+                    <div role="button" class="language-container">
+                        <a href="" class="language-container-btn">
+                            <i class="fa-solid fa-globe" style="font-size: larger;"></i>
+                            <span class="language-text">Tiếng Việt</span>
+                            <i class="fa-solid fa-chevron-down" style="font-size: xx-small;"></i>
+                        </a>
+                    </div>
+                </li>
+                <div class="user-nav">
+                    <a href="#" class="user-logo">
+                        <i class="fa-solid fa-user"></i>
+                        <div id="username-render"></div>
+                    </a>
+                    <div class="user-nav-dropdown">
+                        <div class="dropdown-items-container">
+                            <div class="dropdown-item"><a href="">Tài khoản của tôi</a></div>
+                            <div class="dropdown-item"><a href="">Đơn mua</a></div>
+                            <div class="dropdown-item"><a onclick="logout(event)" href="/Ontap/Session06_project/index.html">Đăng xuất</a></div>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </div>
+        <div class="searchbar-container">
+            <div class="logo-container">
+                <a href="/Ontap/Session06_project/index.html" class="logo-image">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>Shopmee</span>
+                </a>
+                <div class="logo-title">
+                    Giỏ Hàng
+                </div>
+            </div>
+            <div class="searchbar-wrapper">
+                <input type="text" name="search" id="search" placeholder="Tìm sản phẩm, thương hiệu, và tên shop">
+                <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+    </header>
+    <script src="/Ontap/Session06_project/js/product.js"></script>
+</body>
+</html>

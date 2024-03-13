@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Quản lý nhân viên</h2>
+    <form action="" id="employee">
+        <label for="fname">Họ và tên:</label>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="dob">Ngày sinh: </label>
+        <input type="date" id="dob" name="dob" value=" &#128198;">
+        <p>Giới tính 
+            <input type="radio" id="Nam" name="gender" value="Nam" checked>      
+            <label for="Nam">Nam</label>
+            <input type="radio" id="Nữ" name="gender" value="Nữ">
+            <label for="Nữ">Nữ</label>
+            <input type="radio" id="Khác" name="gender" value="Khác">
+            <label for="Khác">Khác</label>
+        </p>
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email"><br>  
+        <label for="password">Mật khẩu</label>
+        <input type="password" name="password" id="password"><br>
+        <label for="address">Địa chỉ</label>
+        <textarea id="address" name="address" rows="15" cols="40" form="employee"></textarea><br>
+        <p>Sở thích
+            <input type="checkbox" id="hobby1" name="hobby1" value="Football">
+            <label for="hobby1"> Đá bóng</label>
+            <input type="checkbox" id="hobby2" name="hobby2" value="Game">
+            <label for="hobby2"> Chơi game</label>
+            <input type="checkbox" id="hobby3" name="hobby3" value="Movie">
+            <label for="hobby3"> Xem phim</label>
+            <input type="checkbox" id="hobby4" name="hobby4" value="Code">
+            <label for="hobby4"> Code</label>
+        </p>
+        <label for="color">Màu sắc</label>
+        <input type="color" name="color" id="color" value=""><br>
+        <label for="picture">Hình ảnh</label>
+        <input type="file" name="picture" id="picture" value="Choose File"><br>
+        <label for="process">Tiến độ công việc</label>
+        <input type="range" name="process" id="process"><br>
+        <label for="search">Tìm kiếm</label>
+        <input type="search" name="search" id="search"><br>
+        <input type="reset" name="search1" id="search1" value="Đặt lại dữ liệu">
+        <input type="submit" name="search3" id="search3" value="Hủy">
+        <input type="submit" name="search4" id="search4" value="Gửi dữ liệu"><br>
+        <label for="city">Thành phố</label>
+        <select name="city" id="city">
+            <option value="hanoi">Hà nội</option>
+            <option value="bacninh">Bắc Ninh</option>
+            <option value="hanam">Hà Nam</option>
+        </select><br>
+        <label for="quantity">Số lượng</label>
+        <input type="number">
+    </form>
+</body>
+</html>

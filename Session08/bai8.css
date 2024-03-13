@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.loading-container{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(112, 160, 160);
+    color: white;
+    position: relative;
+}
+.loader{
+    border: 3px solid white;
+    border-radius: 50%;
+    border-top: 3px solid rgb(112, 160, 160);
+    width: 20px;
+    height: 20px;
+    animation: loader 2s linear infinite;
+    position: absolute;
+    top: 131px;
+    left: 138px;
+}
+@keyframes loader{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}

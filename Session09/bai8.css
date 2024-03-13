@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.rotate{
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    background-color: rgb(107, 112, 123);
+    padding-top: 80px;
+    font-size: 200%;
+    font-weight: 600;
+    color: white;
+    transition: 0.5s;
+}
+.rotate:hover{
+    cursor: pointer;
+    transform: rotate(-45deg);
+}

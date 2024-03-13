@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .dom{
+            color: red;
+        }
+        .title{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="dom">DOM</h1>
+    <button onclick="changeColor()">Click</button>
+    <p class="heading">Lớp A</p>
+    <p class="heading">Lớp B</p>
+    <div class="hello">
+        hello
+        <!-- <h1>hello</h1> -->
+    </div>
+    
+    <!-- 
+        DOM: Document object model
+        mô hình tài liệu dạng đối tượng
+        Q/A: DOM sinh ra khi nào?
+        khi trang web được tải thì trình duyệt sẽ tạo ra một mô hình cây DOM
+
+        Các thành phần trong DOM:
+        1. Element
+            Các cách để lấy element:
+            I. Lấy theo ID
+            -> trả về element có chứa id đó
+            II. Lấy theo class
+            -> trả về HTML collection (theo dạng mảng)
+        2. Attribute: thuộc tính
+            - classList: lấy ra danh sách class của element
+            + cung cấp các phương thức
+                add(): thêm class
+                remove(): xóa class
+                contain(): kiểm tra xem có tồn tại class hay không
+                toggle(): như công tắc kiểm tra xem có class thì xóa đi không có thì thêm vào
+        3. Text(nội dung)
+            - innerHTML
+            - innerText
+            - textContent
+    -->
+    <script>
+        let elemByClass = document.getElementsByClassName("heading");
+        console.log(elemByClass);
+        console.log(elemByClass[0]);
+
+        let elemByTagName = document.getElementsByTagName("p");
+        console.log(elemByTagName);
+        console.log(elemByTagName[1]);
+
+        let elemBySelector = document.querySelector(".heading");
+        console.log(elemBySelector);
+
+        let elemBySelectorAll = document.querySelectorAll(".heading");
+        console.log(elemBySelectorAll);
+        console.log(elemBySelectorAll[0]);
+
+        let count = 0;
+        function changeColor(){
+            let elem = document.getElementById("dom");
+            // elem.classList.toggle("dom");
+            // elem.setAttribute("class", "title");
+            // count++;
+            // if(count % 2 != 0){
+            //     elem.innerText = "Hãy học lập trình";
+            // }else{
+            //     elem.innerText = "DOM"
+            // }
+            
+            if(elem.innerText == "DOM"){
+                elem.innerText = "Hãy học lập trình";
+            }else if(elem.innerText == "Hãy học lập trình"){
+                elem.innerText = "DOM";
+            }
+        }
+
+        let unknown = document.getElementById("unknown");
+        console.log(unknown);
+
+        let hello = document.getElementsByClassName("hello");
+        hello[0].innerHTML = "<h1>hello</h1>";
+        console.log(hello[0]);
+        
+        /*
+            pop(): lấy ra phần tử cuối cùng
+            push(): thêm vào cuối cùng
+            shift(): lấy ra phần tử đầu tiên
+            unshift(): thêm vào đầu tiên
+            join(): nối các phần tử mảng thành chuỗi (có ký tự ngăn cách)
+            map(): tạo ra một mảng mới từ việc gọi hàm cho từng phần tử của mảng
+            forEach(): gọi hàm cho từng phần tử của mảng
+            find(): tìm và trả về giá trị của phần tử đầu tiên thỏa mãn điều kiện
+            filter(): tìm và trả về giá trị của toàn bộ các phần tử thỏa mãn điều kiện
+            reduce(): duyệt qua từng phần từ trong mảng và trả về 1 kết quả dựa theo hàm truyền vào
+            splice(): thêm/sửa/xóa vào phần từ vị trí bất kỳ
+            slice(): lấy một số phần tử của mảng truyền vào một mảng mới
+            toSpliced(): tương tự splice nhưng truyền vào một mảng mới 
+            findIndex(): tìm và trả về vị trí của phần tử đầu tiên thỏa mãn điều kiện
+            concat(): nối các mảng và trả về một mảng mới
+            startsWith(): trả về true nếu chuỗi bắt đầu bằng một chuỗi nhất định
+            endsWith(): ngược lại với startsWith()
+            charAt(): trả về giá trị của kí tự theo vị trí xác định
+            indexOf(): trả về vị trí đầu tiên của một giá trị xác định
+            includes(): trả về true nếu trong chuỗi có chứa một chuỗi xác định 
+            reverse(): đảo ngược vị trí của tất cả các phần tử trong mảng
+            sort(): sắp xếp vị trí các phần từ theo alphabet và chiều tăng dần
+        */
+    </script>
+</body>
+</html>

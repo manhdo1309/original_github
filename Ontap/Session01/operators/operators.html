@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+            OPERATORS
+            1. Toán tử số học
+                +, -, *, /, %, **, ++, --
+                a++; hậu tố thực hiện sau
+                ++a; tiền tố thực hiện trước
+                -- tương tự
+            2. Toán tử gán
+                =, +=, -=, *=, /=, %=, **=
+            3. Toán tử so sánh
+                ==, ===, >=, <=, <, >, !=, !==
+                phân biệt
+                == & ===
+                == so sánh giá trị
+                === so sánh giá trị và kiểu dữ liệu
+            4. Toán tử logic
+                &&, ||, !
+                falsy: 0, NaN, null, undefined, false, "", ''
+                trusthy: không phải là falsy
+                || : tính từ trái qua phải lấy truthy đầu tiên, nếu không có lấy giá trị cuối cùng
+                && : tính từ phải qua trái lấy falsy đầu tiên, nếu không có lấy giá trị cuối cùng
+            5. Toán tử 3 ngôi
+                ?, : (giống if-else)
+            6. Toán tử nullish 
+                ?? - tính từ trái qua phải, nếu gặp null hoặc undefined thì lấy bên cạnh, không thì lấy đầu tiên luôn
+        */
+        let result = null??6;
+        console.log(result);
+    </script>
+</body>
+</html>

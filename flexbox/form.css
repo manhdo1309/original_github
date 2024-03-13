@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.container{
+    background-image: url(https://duhocue.edu.vn/public/uploads/images/hinh-tin-tuc/Du-hoc-my-tai-bang-alaska-vung-dat-dieu-ky.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    background-color: white;
+    padding: 20px 24px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.form-heading {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.form-label {
+    font-weight: 700;
+}
+
+.form-input {
+    height: 36px;
+    padding: 0px 16px;
+    outline: none;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+}
+
+.form-input:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.form-input:focus{
+    border-color: blue;
+}
+
+.button {
+    height: 36px;
+    padding: 0px 16px;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.button-blue{
+    background-color: blue;
+    color: #fff;
+}
+
+.redirect {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 24px;
+}

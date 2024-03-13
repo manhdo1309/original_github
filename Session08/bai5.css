@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+div{
+    background-color: aqua;
+    width: 300px;
+    transition-duration: 1s;
+    font-size: 150%;
+}
+div:hover{
+    cursor: pointer;
+    color: red;
+    margin-left: 20px;
+}

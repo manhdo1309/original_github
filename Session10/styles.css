@@ -1,0 +1,43 @@
+/* Thêm CSS cho toàn bộ văn bản */
+body {
+  font-family: sans-serif; /* Thiết lập phông chữ không có chân */
+  display: flex;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  min-height: 100vh; /* Chiều cao tối thiểu là toàn màn hình */
+  margin: 0; /* Bỏ margin mặc định của body */
+}
+
+/* CSS chung cho các khối */
+.block {
+  width: 50px;
+  height: 50px;
+  background-color: blue; /* Màu sắc có thể thay đổi */
+  margin: 10px; /* Khoảng cách giữa các khối */
+}
+
+/* CSS cho các layout */
+.layout {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Layout ngang tăng dần */
+.horizontal-increasing {
+  flex-direction: row;
+}
+
+/* Layout ngang giảm dần */
+.horizontal-decreasing {
+  flex-direction: row-reverse;
+}
+
+/* Layout dọc tăng dần */
+.vertical-increasing {
+  flex-direction: column;
+}
+
+/* Layout dọc giảm dần */
+.vertical-decreasing {
+  flex-direction: column-reverse;
+}

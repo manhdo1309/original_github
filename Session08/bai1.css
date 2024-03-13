@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+div{
+    width: 250px;
+    border: 1px solid transparent;
+    background-color: aqua;
+    line-height: 1.7;
+}
+h3{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.input{
+    width: 180px;
+}
+.input:hover{
+    cursor: pointer;
+    background-color: yellow;
+}
+.submit{
+    margin-top: 5px;
+}

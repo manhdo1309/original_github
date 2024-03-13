@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Callback function
+        - là hàm
+        - được truyền làm đối số của hàm khác
+     -->
+    <script>
+        // console.log("111");
+        // setTimeout(() =>{
+        //     console.log("222");
+        // }, 0);
+        // console.log("333");
+        let sdt;
+        function xinSoDT(callback){
+            console.log("Xin số dt");
+            setTimeout(() =>{
+                console.log("mất 3s tìm số");
+                sđt = 12345;
+                callback(sđt);
+            }, 3000)
+        }
+        //function khi có số rồi mới gọi
+        function coSoMoiGoi(sđt){
+            console.log(`gọi đến số ${sđt}`);
+        }
+        xinSoDT(coSoMoiGoi);
+    </script>
+</body>
+</html>

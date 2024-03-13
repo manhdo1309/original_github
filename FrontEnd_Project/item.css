@@ -1,0 +1,112 @@
+.home-category-list{
+    background-color: #fff;
+    width: 1192px;
+    margin-left: 155px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.header-section-category-list-title{
+    color: #877979;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.category-list-content{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.category-content-item{
+    color: #373333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 119.2px;
+    height: 150.19px;
+    border: 1px solid #f2f2f2;
+    line-height: 30px;
+    padding-left: 2px;
+    padding-right: 2px;
+    cursor: pointer;
+}
+
+.category-content-item:hover{
+    border-color: #dddbdb;
+}
+
+.category-content-item i{
+    font-size: 250%;
+    height: 50px;
+    padding-top: 5px;
+}
+
+.category-list-content{
+    position: relative;
+}
+
+.slider-category-list-container{
+    display: flex;
+}
+
+.category-list-content-first-row{
+    display: flex;
+}
+
+.category-content-item-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    line-height: 20px;
+}
+
+.category-list-content-second-row{
+    display: flex;
+}
+
+.prev-category-btn, .next-category-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 25px;
+    height: 25px;
+    margin-top: -12.5px;
+    line-height: 25px;
+    text-align: center;
+    color: #8d8d8d;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 50%;
+    user-select: none;
+    box-shadow: rgba(71, 71, 71, 0.35) 0px 0px 20px;
+    transform: scale(1);
+    transition: 0.2s ease;
+}
+
+.prev-category-btn{
+    left: -15px;
+}
+
+.next-category-btn{
+    right: -15px;
+    border-radius: 50%;
+}
+
+.prev-category-btn:hover, .next-category-btn:hover{
+    transform: scale(2);
+}
+
+.slider-category-list-container{
+    display: flex;
+}
+
+.slider-category-list-content-hidden{
+    display: none;
+}

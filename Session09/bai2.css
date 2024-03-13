@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    padding: 5px;
+    border-radius: 10px;
+    position: relative;
+}
+img{
+    border-radius: 10px;
+
+}
+.layer1 {
+    width: 170px;
+    height: 170px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 32px;
+    top: 16px;
+    border-radius: 10px;
+}
+.layer2 {
+    width: 170px;
+    height: 170px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 65px;
+    top: 44px;
+    border-radius: 10px;
+}
+.label{
+    padding: 5px;
+    width: 73px;
+    background-color: rgb(197, 60, 60);
+    color: white;
+    font-size: 60%;
+    border-radius: 4px;
+    position: absolute;
+    top: 19px;
+    left: 20px;
+}
+.gear{
+    width: 41px;
+    height: 41px;
+    background-color: rgb(200, 67, 67);
+    font-size: 30px;
+    color: white;
+    padding: 5px;
+    border-radius: 8px;
+    position: absolute;
+    top: 51px;
+    left: 205px;
+}
+.A{
+    width: 41px;
+    height: 41px;
+    background-color: transparent;
+    font-size: 30px;
+    color: rgb(14, 226, 226);
+    padding: 5px;
+    border-radius: 8px;
+    position: absolute;
+    top: 103px;
+    left: 205px;
+    border: 1px solid rgb(14, 226, 226);
+    text-align: center;
+}
+.B{
+    width: 41px;
+    height: 41px;
+    background-color: transparent;
+    font-size: 30px;
+    color: rgb(14, 226, 226);
+    padding: 5px;
+    border-radius: 8px;
+    position: absolute;
+    top: 157px;
+    left: 205px;
+    border: 1px solid rgb(14, 226, 226);
+    text-align: center;
+}
+.line1{
+    position: absolute;
+    top: 92px;
+    left: 225px;
+    height: 11px;
+    border: 0.5px solid rgb(14, 226, 226);
+}
+.line2{
+    position: absolute;
+    top: 144px;
+    left: 225px;
+    height: 13px;
+    border: 0.5px solid rgb(14, 226, 226);
+}
+.text{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 300px;
+    background-color: transparent;
+    position: absolute;
+    top: 221px;
+    left: 22px;
+    color: white;
+    font-size: 50%;
+}

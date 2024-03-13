@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.fade{
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    background-color: rgb(102, 181, 181);
+    padding-top: 80px;
+    font-size: 200%;
+    font-weight: 600;
+    color: white;
+    transition: 0.5s;
+}
+.fade:hover{
+    cursor: pointer;
+    background-color: rgb(127, 96, 96);
+}

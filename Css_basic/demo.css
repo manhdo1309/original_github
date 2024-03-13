@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+img{
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+#heading1 {
+    font-style: italic;
+}
+.text-white{
+    color: white !important;
+}
+.font-bold{
+    font-weight: bold;
+}
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+input[type="radio"]{
+    height: 20px;
+    width: 20px;
+}
+.button{
+    padding: 20px; 
+    margin: 20px;
+    height: 36px;
+    min-width: 80px;
+    padding: 0 16px;
+    border-radius: 4px;
+    /*border-width: 5px;
+    border-color: blue;
+    border-style: solid;*/
+    border: 5px solid transparent;
+}
+.button-blue{
+    background-color: blue;
+}
+.button-red{
+    background-color: red;
+}
+.button-green{
+    background-color: green;
+}

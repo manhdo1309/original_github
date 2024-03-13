@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.bars{
+    cursor: pointer;
+}
+.menu{
+    display: none;
+    width: 100px;
+    background-color: blue;
+    padding-left: 20px;
+    position: absolute;
+    top: 50px;
+    animation-name: move;
+    animation-duration: 1s;
+}
+
+.bars:hover .menu{
+    display: block;
+    margin-left: 10px;
+}
+
+@keyframes move{
+    0%{
+        width: 2px;
+        margin-left: -5px;
+    }
+}
